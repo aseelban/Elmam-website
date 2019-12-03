@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css?family=Changa&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Markazi+Text&display=swap");
+/*
+ ! ----- Start editing Header --------
+*/
+*:not(i) {
+  font-family: "Markazi Text", serif !important; }
+
+body {
+  overflow-x: hidden; }
+
+.header .logo {
+  /* media end*/ }
+
+.header .logo h1, .header .logo p {
+  font-family: "Changa", sans-serif;
+  font-size: 30px;
+  font-weight: bold; }
+
+.header .logo p {
+  font-size: 15px;
+  font-weight: 300; }
+
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right; } }
+
+@media (max-width: 767px) {
+  .header .logo .the-toggler {
+    right: auto;
+    left: 30px; } }
+
+.header .navbar {
+  float: right;
+  /* media start*/
+  /* media end*/ }
+
+@media (min-width: 768px) {
+  .header .navbar {
+    float: right; } }
+
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+    text-align: right; } }
+
+.header .navbar li {
+  float: right; }
+
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right; } }
+
+.header .lang {
+  float: right;
+  text-align: right;
+  position: absolute;
+  right: 93.4%; }
+
+.header .lang a {
+  color: #E74C3C;
+  text-decoration: none;
+  font-family: "Markazi Text", serif; }
+
+/*
+ ! ----- End editing Header --------
+*/
+/*
+ ! ----- Start Home Page --------
+*/
+/* start section slider  */
+/* end section slider  */
+/* start section services */
+@media (min-width: 992px) {
+  .services .service-box {
+    float: right; } }
+
+/* end section services */
+/* start section our player */
+.our-players .our-players-box {
+  float: right;
+  text-align: right; }
+
+@media (min-width: 768px) {
+  .our-players .our-players-box {
+    float: right;
+    text-align: right !important; } }
+
+@media (min-width: 992px) {
+  .our-players .our-players-box {
+    text-align: right; } }
+
+@media (max-width: 767px) {
+  .our-players .our-players-box {
+    text-align: center; } }
+
+.our-players .our-players-box .link {
+  text-align: right; }
+
+/* end section our player */
+/* start section portfolio */
+.portfolio .portfolio-box {
+  float: right; }
+
+/* end section portfolio */
+/*
+ ! ----- End Home Page --------
+*/
+/*
+ ! ----- Start Footer --------
+*/
+.footer .gallery, .footer .info, .footer .contact {
+  float: right; }
+
+.footer .gallery .blog-box img {
+  float: right; }
+
+.footer .gallery .blog-box .blog-txt {
+  float: right; }
+
+.footer .copyright .txt, .footer .copyright .author {
+  float: right;
+  color: #504e4e; }
+
+.footer .copyright .author {
+  text-align: left; }
+
+@media (max-width: 767px) {
+  .footer .copyright .author {
+    text-align: center; } }
+
+/*# sourceMappingURL=homepage-rtl.css.map */
+/*# sourceMappingURL=homepage-rtl.css.map */
+
+/*# sourceMappingURL=homepage-rtl.css.map */

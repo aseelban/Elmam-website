@@ -1,0 +1,11 @@
+{
+  "name": "landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w css/ -o css/ --source-map true"
+  },
+  "author": "aseelban",
+  "license": "ISC"
+}

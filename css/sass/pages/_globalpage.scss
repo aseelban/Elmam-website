@@ -1,0 +1,18 @@
+@import '../helpers/variables';
+
+ul,li {
+    list-style: none;
+    padding: 0;
+}
+
+
+.txt-center-xs {
+    @media #{$maxMobile} {
+    text-align: center;
+    }
+}
+.txt-center-s {
+    @media #{$maxMobile} {
+    text-align: center;
+    }
+}

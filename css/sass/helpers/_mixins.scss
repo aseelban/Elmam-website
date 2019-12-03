@@ -1,0 +1,74 @@
+
+@mixin myc($el) {
+    color:$el;
+}
+
+@mixin mediaQ($el) {
+
+    @media (min-width: $el){
+        @content;
+    }   
+
+}
+
+// overlay
+
+@mixin style-overlay {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+    
+}
+
+
+// Prefixer
+
+@mixin s-prefixer($property, $value, $prefixes: ()){
+
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+
+/* 
+    - Animation
+    - add auto Prefixer to Animation
+
+*/
+
+@mixin s-keyFrame ($el) {
+
+    @-webkit-keyframes #{$el} {
+        @content;
+    }
+    @-moz-keyframes #{$el} {
+        @content;
+    }
+    @keyframes #{$el} {
+        @content;
+    }
+    
+}
+
+
+// overlay 
+
+@mixin overlay() {
+    position: absolute;
+    background-color: rgba(0, 0, 96, 0.4);
+  }
+
+
+
+
+
+
+
+
+
+
+

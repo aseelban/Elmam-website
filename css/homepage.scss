@@ -1,0 +1,25 @@
+// import varibles & mixins
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixins';
+
+// imprt grid 
+@import 'sass/layout/_grid.scss';
+@import 'sass/pages/globalpage';
+
+//import heading component
+
+@import 'sass/components/heading';
+
+
+// import layout header
+@import 'sass/layout/header';
+
+//imort Home Page
+@import 'sass/pages/home';
+
+// import btn
+@import 'sass/components/buttons';
+
+// import layout footer
+@import 'sass/layout/footer';
+

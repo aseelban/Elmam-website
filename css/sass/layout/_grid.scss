@@ -1,0 +1,32 @@
+// resize box
+* {
+    @include s-prefixer(box-sizing, border-box, webkit moz);
+}
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media #{$minSmall} {
+        width: 750px;
+    }
+    @media #{$minMedium} {
+        width: 970px;
+    }
+    @media #{$minLarge} {
+        width: 1170px;
+    }
+   
+}
+
+
+.clear {
+    clear: both;
+}
+
+

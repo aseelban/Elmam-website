@@ -1,0 +1,146 @@
+
+
+.footer {
+    background: $footer-bg;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-top: 50px;
+
+    .gallery, .info, .contact {
+        float: $float-left;
+    }
+
+    .gallery {
+        @media #{$minSmall} {
+            width: 100%;
+            img {
+                margin: 10px 0 !important;
+                
+            }        }
+        @media #{$minMedium} {
+            width: 50%;
+        }
+        @media #{$maxMobile} {
+            .title {
+                margin: 0;
+            }
+            .blog-box {
+                img {
+                    margin: 18px 0 !important;
+                    
+                }
+            }
+        }
+        .blog-box {
+            overflow: hidden;
+
+            img {
+                float: $float-left;
+                // margin-bottom: 10px;
+            }
+            .blog-txt {
+                float: $float-left;
+                margin-left: 5px;
+                margin-right: 5px;
+                width: calc(100% - 150px);
+                
+                h4 {
+                    color: $nav-bg;
+                }
+                p {
+                    color: $footer-txt;
+                    line-height: 1.4;
+                }
+            }
+
+    }
+}
+        .info {
+            @media #{$minSmall} {
+                width: 50%;
+            }
+            @media #{$maxMobile} {
+                width: 50%;
+            }
+            @media #{$minMedium} {
+                width: 25%;
+            }
+            ul {
+                line-height: 1.6;
+                color: $footer-txt;
+                li {
+                    span {
+                        color: $nav-bg;
+                    }
+                }
+            }
+            h4{
+                margin-bottom: 0;
+                color: $footer-txt;
+            }
+            p {
+                margin-top: 10px;
+                color: $footer-txt;
+            }
+        }
+        .contact {
+            @media #{$minSmall} {
+                width: 50%;
+            }
+            @media #{$minMedium} {
+                width: 25%;
+            }
+            form {
+    
+                input, textarea {
+                    margin: 3px 0;
+                    width: 100%;
+                    border: 3px solid $light-bg;
+                    border-radius: 5px;
+                    padding: 5px
+                    
+                }
+                textarea {
+                    height: 140px;
+                }
+            }
+    
+        }
+
+        .copyright {
+            margin-top: 30px;
+            border-top: 1px solid #b9b9b9;
+            overflow: hidden;
+            padding: 20px 0;
+            .txt, .author {
+                float: $float-left;
+                width: 50%;
+                margin-top: 15px;
+                color: $footer-txt
+            }
+            .txt {
+                @media #{$maxMobile} {
+                    width: 100%;
+                    text-align: center;
+                }
+                
+            }
+            .author {
+                @media #{$maxMobile} {
+                    width: 100%;
+                    text-align: center;
+                }
+                text-align: $txt-right;
+                span {
+                    color: $nav-bg;
+                }
+            }
+
+        }
+    .title {
+        color: $dark-color;
+        font-weight: bold;
+        font-family: $font-heading;
+        margin: 5px 0;
+    }
+}

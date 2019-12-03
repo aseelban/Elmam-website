@@ -1,0 +1,189 @@
+// import varibles 
+@import 'sass/helpers/variables';
+
+// import font
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text&display=swap');
+
+
+$float-left: right;
+$float-right: left;
+
+$txt-right: left;
+$txt-left: right;
+
+$font-heading:'Markazi Text', serif;
+;
+$logo-heading: 'Changa', sans-serif;
+
+/*
+ ! ----- Start editing Header --------
+*/
+*:not(i) {
+    font-family: $font-heading !important;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+.header {        
+        .logo {
+            h1,p {
+                font-family: $logo-heading;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 300;
+            }
+            @media #{$minMedium} {
+                float: $float-left;
+                text-align: $txt-left;
+            }
+            .the-toggler {
+            @media #{$maxMobile} {
+                right: auto;
+                left: 30px;
+            }
+            }
+            /* media end*/
+        }
+        .navbar {
+
+            float: $float-left;
+            /* media start*/
+
+            @media #{$minSmall} {
+                float: $float-left;
+
+            }
+            @media #{$minMedium} {
+                float: $float-left;
+                text-align: $txt-left;
+            }
+            /* media end*/
+            li {
+                float: $float-left;
+                @media #{$maxMobile} {
+                    text-align: $txt-left;
+                }
+            }
+        }
+            .lang {
+                float: $float-left;
+                text-align: $txt-left;
+                position: absolute;
+                right: 93.4%;
+                a {
+                    color: $nav-bg;
+                    text-decoration: none;
+                    font-family: $font-heading;
+                }
+            }
+}
+
+
+
+/*
+ ! ----- End editing Header --------
+*/
+/*
+ ! ----- Start Home Page --------
+*/
+
+/* start section slider  */
+  
+/* end section slider  */
+
+/* start section services */
+
+.services {
+    .service-box {
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+    }
+}
+
+
+
+
+
+/* end section services */
+
+
+/* start section our player */
+.our-players {
+    .our-players-box {
+        float: $float-left;
+        text-align: $txt-left;
+        @media #{$minSmall} {
+            float: $float-left;
+            text-align: $txt-left !important;
+        }
+        @media #{$minMedium} {
+            text-align: $txt-left;
+        }
+        @media #{$maxMobile} {
+            text-align: center;
+            }
+        .link {
+            text-align: $txt-left;
+        }
+    }
+}
+
+/* end section our player */
+
+
+/* start section portfolio */
+.portfolio {
+    .portfolio-box {
+        float: $float-left;
+    }
+}
+/* end section portfolio */
+
+/*
+ ! ----- End Home Page --------
+*/
+/*
+ ! ----- Start Footer --------
+*/
+
+
+
+.footer {
+    .gallery, .info, .contact {
+        float: $float-left;
+    }
+
+    .gallery {
+        .blog-box {
+            img {
+                float: $float-left;
+            }
+            .blog-txt {
+                float: $float-left;
+            }
+
+    }
+}
+        .copyright {
+
+            .txt, .author {
+                float: $float-left;
+                color: $footer-txt;
+            }
+            .author {
+                text-align: $txt-right;
+                @media #{$maxMobile} {
+                    text-align: center;
+                }
+            }
+
+        }
+}
+
