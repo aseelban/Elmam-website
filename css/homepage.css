@@ -79,6 +79,11 @@ ul, li {
   /* media start*/
   /* media end*/ }
 
+.header .logo img {
+  border-style: none;
+  width: 115px;
+  margin-top: -14px; }
+
 @media (min-width: 768px) {
   .header .logo {
     float: none;

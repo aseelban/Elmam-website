@@ -6,6 +6,12 @@
         
         .logo {
             position: relative;
+
+            img {
+                border-style: none;
+                width: 115px;
+                margin-top: -14px;
+            }
             /* media start*/
             @media #{$minSmall} {
                 float: none;
