@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slider -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+
     <link rel="stylesheet" href="css/homepage.css">
     <!-- <link rel="stylesheet" href="css/homepage-rtl.css"> -->
     <link rel="stylesheet" href="css/vendor/normalize.css">
@@ -48,28 +52,32 @@
 
 
     <!-- slider start -->
+  
     <div class="slider">
-        <div class="container ">
-            <!-- slider start -->
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(image/bg1.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(image/bg2.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(image/bg3.jpg)"></div>
-                </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="container">
+            <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide">
+                    <img src="./image/bg1.jpg">
+                </li>
+                <li class="glide__slide">
+                    <img src="./image/bg2.jpg">
+                </li>
+                <li class="glide__slide">
+                    <img src="./image/bg3.jpg">
+                </li>
+                </ul>
             </div>
-            <div style="height: 100px;" class="swiper-container gallery-thumbs">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url(image/bg1.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(image/bg2.jpg)"></div>
-                    <div class="swiper-slide" style="background-image:url(image/bg3.jpg)"></div>
-                </div>
+            <div class="glide__arrows"  data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
             </div>
-            <!-- end -->
-
+            </div>
         </div>
     </div>
 
@@ -274,9 +282,32 @@
     <!-- slider -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
     <!-- main js -->
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- slider config -->
+    <script>
+        const config = {
+            type: 'carousel',
+            focusAt: 'center',
+            perView: 3,
+            autoplay: 2000,
+            breakpoints: {
+            1170: {
+            perView: 3
+            },
+            970: {
+            perView: 2
+            },
+            750: {
+            perView: 1
+            }
+        }
+
+        }
+        new Glide('.glide', config).mount()
+        new Glide('.glide').mount({ Controls, Breakpoints })
+      </script> 
 </body>
 
 </html>

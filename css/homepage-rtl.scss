@@ -16,17 +16,15 @@ $font-heading:'Markazi Text', serif;
 ;
 $logo-heading: 'Changa', sans-serif;
 
-/*
- ! ----- Start editing Header --------
-*/
 *:not(i) {
     font-family: $font-heading !important;
-
+    
 }
 
 body {
     overflow-x: hidden;
 }
+/* Start  Header */
 .header {        
         .logo {
             h1,p {
@@ -86,16 +84,7 @@ body {
 
 
 
-/*
- ! ----- End editing Header --------
-*/
-/*
- ! ----- Start Home Page --------
-*/
-
-/* start section slider  */
-  
-/* end section slider  */
+/* end Header */
 
 /* start section services */
 
@@ -109,10 +98,6 @@ body {
         }
     }
 }
-
-
-
-
 
 /* end section services */
 
@@ -149,15 +134,8 @@ body {
 }
 /* end section portfolio */
 
-/*
- ! ----- End Home Page --------
-*/
-/*
- ! ----- Start Footer --------
-*/
 
-
-
+/* Start Footer */
 .footer {
     .gallery, .info, .contact {
         float: $float-left;

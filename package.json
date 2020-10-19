@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w css/ -o css/ --source-map true"
+    "sass": "node-sass -w css/ -o css/ --source-map true",
+    "build": "babel src/ -d lib/"
   },
   "author": "aseelban",
   "license": "ISC",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "node-sass": "^4.13.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1"
   }
 }
