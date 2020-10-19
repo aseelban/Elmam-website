@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&family=Raleway:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Changa&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Markazi+Text&display=swap");
 /*
@@ -72,6 +75,9 @@ body {
 /* start section slider  */
 /* end section slider  */
 /* start section services */
+.services .service-box h3 {
+  font-weight: 400; }
+
 @media (min-width: 992px) {
   .services .service-box {
     float: right; } }
@@ -117,7 +123,14 @@ body {
   float: right; }
 
 .footer .gallery .blog-box .blog-txt {
-  float: right; }
+  float: right;
+  font-size: 17px; }
+
+.footer .gallery .blog-box .blog-txt p {
+  font-size: 15px; }
+
+.footer .info ul {
+  font-size: 16px; }
 
 .footer .copyright .txt, .footer .copyright .author {
   float: right;
@@ -130,7 +143,6 @@ body {
   .footer .copyright .author {
     text-align: center; } }
 
-/*# sourceMappingURL=homepage-rtl.css.map */
 /*# sourceMappingURL=homepage-rtl.css.map */
 
 /*# sourceMappingURL=homepage-rtl.css.map */

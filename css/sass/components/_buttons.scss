@@ -4,14 +4,10 @@
     padding: 5px 10px;
     border-radius: 5px;
     color: $white-color;
+    border: none;
     font-family: $font-heading;
+    padding: 0.4rem 1.3rem;
     cursor: pointer;
-    &:hover{
-        background: $nav-bg;
-        @include s-prefixer(Animation, fadeInOut 5s infinite linear, webkit moz o);
-        
-        
-    }
     
 }
 

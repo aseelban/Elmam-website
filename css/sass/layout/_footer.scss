@@ -40,6 +40,7 @@
             }
             .blog-txt {
                 float: $float-left;
+                font-family: $font-paragraph;
                 margin-left: 5px;
                 margin-right: 5px;
                 width: calc(100% - 150px);
@@ -50,6 +51,7 @@
                 p {
                     color: $footer-txt;
                     line-height: 1.4;
+                    font-size: 14px;
                 }
             }
 
@@ -68,6 +70,8 @@
             ul {
                 line-height: 1.6;
                 color: $footer-txt;
+                font-family: $font-paragraph;
+                font-size: 14px;
                 li {
                     span {
                         color: $nav-bg;
@@ -77,10 +81,14 @@
             h4{
                 margin-bottom: 0;
                 color: $footer-txt;
+                font-family: $font-heading;
+
             }
             p {
                 margin-top: 10px;
                 color: $footer-txt;
+                font-family: $font-paragraph;
+                font-size: 14px;
             }
         }
         .contact {
@@ -97,7 +105,8 @@
                     width: 100%;
                     border: 3px solid $light-bg;
                     border-radius: 5px;
-                    padding: 5px
+                    padding: 5px;
+                    @include placeholder-style(#8e9e9f,$font-paragraph, 14px)
                     
                 }
                 textarea {
@@ -112,6 +121,7 @@
             border-top: 1px solid #b9b9b9;
             overflow: hidden;
             padding: 20px 0;
+            font-family: $font-paragraph;
             .txt, .author {
                 float: $float-left;
                 width: 50%;
@@ -126,6 +136,7 @@
                 
             }
             .author {
+                font-family: $font-paragraph;
                 @media #{$maxMobile} {
                     width: 100%;
                     text-align: center;

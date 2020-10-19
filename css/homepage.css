@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&family=Raleway:wght@300;400&display=swap");
 /* 
     - Animation
     - add auto Prefixer to Animation
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat:ital,wght@1,300&family=Raleway:wght@300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -57,7 +63,7 @@ ul, li {
   padding: 7px 5px;
   font-size: 16px;
   text-transform: uppercase;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "Commissioner", sans-serif; }
 
 .head-w-border h2:before {
   content: '';
@@ -98,11 +104,11 @@ ul, li {
 
 .header .logo h1 {
   color: #d65f5f;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Commissioner", sans-serif;
   margin-top: 3px; }
 
 .header .logo p {
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "Commissioner", sans-serif; }
 
 .header .navbar {
   border-bottom: 1px solid #000;
@@ -152,7 +158,7 @@ ul, li {
   display: block;
   color: #fff;
   text-decoration: none;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "Commissioner", sans-serif; }
 
 .header .navbar li a:hover {
   color: #F8F9F9; }
@@ -170,7 +176,7 @@ ul, li {
 .header .lang a {
   color: #E74C3C;
   text-decoration: none;
-  font-family: "Noto Sans", sans-serif; }
+  font-family: "Commissioner", sans-serif; }
 
 @media (max-width: 767px) {
   .header .lang {
@@ -221,6 +227,9 @@ ul, li {
   .services .service-box i {
     margin-top: 15px; } }
 
+.services .service-box .services-title {
+  font-family: "Commissioner", sans-serif; }
+
 .services .service-box .services-title i {
   color: #d65f5f;
   display: block;
@@ -231,9 +240,12 @@ ul, li {
 
 .services .service-box .services-des {
   color: #1C2833;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px; }
 
 .services .service-box .services-link {
+  font-family: "Raleway", sans-serif;
   color: #1C2833;
   text-decoration: none; }
 
@@ -276,12 +288,18 @@ ul, li {
 
 .our-players .our-players-box h4 {
   color: #1C2833;
-  font-weight: 600; }
+  font-family: "Commissioner", sans-serif; }
 
 .our-players .our-players-box h4 span {
   color: #504e4e; }
 
+.our-players .our-players-box .our-players-des {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
 .our-players .our-players-box .link {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
   text-align: left; }
 
 .our-players .our-players-box .link a {
@@ -334,15 +352,10 @@ ul, li {
   padding: 5px 10px;
   border-radius: 5px;
   color: #fff;
-  font-family: "Noto Sans", sans-serif;
+  border: none;
+  font-family: "Commissioner", sans-serif;
+  padding: 0.4rem 1.3rem;
   cursor: pointer; }
-
-.main-btn:hover {
-  background: #E74C3C;
-  -webkit-Animation: fadeInOut 5s infinite linear;
-  -moz-Animation: fadeInOut 5s infinite linear;
-  -o-Animation: fadeInOut 5s infinite linear;
-  Animation: fadeInOut 5s infinite linear; }
 
 .the-toggler {
   background: #d65f5f;
@@ -425,6 +438,7 @@ ul, li {
 
 .footer .gallery .blog-box .blog-txt {
   float: left;
+  font-family: "Raleway", sans-serif;
   margin-left: 5px;
   margin-right: 5px;
   width: calc(100% - 150px); }
@@ -434,7 +448,8 @@ ul, li {
 
 .footer .gallery .blog-box .blog-txt p {
   color: #504e4e;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-size: 14px; }
 
 @media (min-width: 768px) {
   .footer .info {
@@ -450,18 +465,23 @@ ul, li {
 
 .footer .info ul {
   line-height: 1.6;
-  color: #504e4e; }
+  color: #504e4e;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
 
 .footer .info ul li span {
   color: #E74C3C; }
 
 .footer .info h4 {
   margin-bottom: 0;
-  color: #504e4e; }
+  color: #504e4e;
+  font-family: "Commissioner", sans-serif; }
 
 .footer .info p {
   margin-top: 10px;
-  color: #504e4e; }
+  color: #504e4e;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
 
 @media (min-width: 768px) {
   .footer .contact {
@@ -478,6 +498,30 @@ ul, li {
   border-radius: 5px;
   padding: 5px; }
 
+.footer .contact form input::-webkit-input-placeholder, .footer .contact form textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #8e9e9f;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
+.footer .contact form input:-moz-placeholder, .footer .contact form textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #8e9e9f;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
+.footer .contact form input::-moz-placeholder, .footer .contact form textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #8e9e9f;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
+.footer .contact form input:-ms-input-placeholder, .footer .contact form textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #8e9e9f;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px; }
+
 .footer .contact form textarea {
   height: 140px; }
 
@@ -485,7 +529,8 @@ ul, li {
   margin-top: 30px;
   border-top: 1px solid #b9b9b9;
   overflow: hidden;
-  padding: 20px 0; }
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif; }
 
 .footer .copyright .txt, .footer .copyright .author {
   float: left;
@@ -499,6 +544,7 @@ ul, li {
     text-align: center; } }
 
 .footer .copyright .author {
+  font-family: "Raleway", sans-serif;
   text-align: right; }
 
 @media (max-width: 767px) {
@@ -512,7 +558,7 @@ ul, li {
 .footer .title {
   color: #1C2833;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Commissioner", sans-serif;
   margin: 5px 0; }
 
 /*# sourceMappingURL=homepage.css.map */
